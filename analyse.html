@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - PowerSole</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/aa2689a54b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-bars menu-btn"></i> 
+        <a href="forside.html">
+        <img src="img/logo..png" alt="Powersole Logo" class="logo">
+        </a>
+        <input type="text" placeholder="Search" class="search-bar">
+        <i class="fa-solid fa-magnifying-glass search-btn"></i> 
+        <button class="login-btn">Register/Log in</button>
+        <i class="fa-solid fa-cart-shopping cart-btn"></i> 
+    </header>
+
+        <main>
+            <section>
+                <h1>Google Trends Analyse</h1>
+                <p>Jeg har brukt google trends til å finne ut disse relevant søkeordene. </p>
+                <ul>
+                    <li>Mens shoes</li>
+                    <li>Womens shoes</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Lighthouse analyse</h2>
+                <p>Index SEO analyse</p>
+                <img src="img/seo-index.png" alt="lighthouse SEO analyse av index/hovedsiden html min.">
+                <p>Produkter SEO analyse</p>
+                <img src="img/SEO-produkt.png" alt="lighthouse SEO analyse av produkter html min.">
+                <p>Produkter info SEO analyse</p>
+                <img src="img/Produkt-info-SEO.png" alt="lighthouse SEO analyse av produkt info html min.">
+                <p>Alle sidene hadde noe til felles med SEO og det var at document does not have a meta description. Så alt jeg trenger å gjøre er å legge det til så vil SEOen min nesten være helt perfekt. </p>
+                <p>UU analyse</p>
+                <p>Index UU analyse</p>
+                <img src="img/UU-analyse-index.png" alt="lighthouse SEO analyse av index/hovedsiden html min.">
+                <p>Ser ut som jeg mangler å endre litt på fargene på nettsiden sånn at de kan ha en sufficent contrast ratio og det tilhenges med at links rely on color to be distinguishable, så det å fikse det kommer til å gjøre UU bedre. </p>
+                <p>Produkter UU analyse</p>
+                <img src="img/UU-produkt.png" alt="lighthouse SEO analyse av produkter html min.">
+                <p>Her så er det akkurat det samme som den forrige bare at links rely on color to be distinguishable, ved å fikse til det så blir det bedre. Spesielt etter som UU er allerede nesten 100. </p>
+                <p>Produkter info UU analyse</p>
+                <img src="img/produkt-info-UU.png" alt="lighthouse SEO analyse av produkt info html min.">
+                <p>Her så er det en del, det har en felles en fra alle de andre som er at links reply on color, også har vi select elements do not have associated label elements og heading elements are not in a descending order "Glemte å ha med "h2" siden jeg hadde "h1" og "h3". </p>
+            </section>
+            <section>
+                <h3>Webaim analyse UU</h3>
+                <p>Index/Hovedside</p>
+                <img src="img/ny-webaim-index.png" alt="Webaim UU analyse av index html min.">
+                <p>Her så får jeg en error som er en missing form label for search feltet mitt og en error som jeg fikk fra lighthouse også som er low contrast som er det å fikse på fargene. </p>
+                <p>Produkt side</p>
+                <img src="img/webaim-produkt.png" alt="Webaim UU analyse av produkt html min.">
+                <p>Her så er det samme error fra forrige side som var missing label, også har vi en warning over at jeg repiterer den samme linken 10 ganger, dette var bare en prototype for nettsiden min. Alle produktene på siden leder til samme link og det er derfor jeg får denne meldingen. </p>
+                <p>Produkt info side</p>
+                <img src="img/webaim-produkt-info.png" alt="Webaim UU analyse av produkt info html min.">
+                <p>Samme missing label error fra forrige sider, også har vi en contrast error også samtidig så har vi en missing label for skostørrelse også skippa jeg en heading level også. "h1-h3". </p>
+            </section>
+            <section>
+                <h4>ChatGPT resultater</h4>
+                <p>Resultater jeg fikk fra index forsiden min var: for SEO så trengte jeg å ha en meta-beskrivelse tagg og resten er ting jeg allerede har kontroll på som for eksempel mobilvennlighet, linker, alt-attributter for bilder. Og for UU perspektiv: kontrast og farger som var den samme jeg fikk fra lighthouse og webaim. Så fikk jeg tastaturvavigasjon og man kan gå gjennom hele nettsiden med tab tasten. Også må jeg knytte søkefeltet men en tilknyttet label. </p>
+                <p>Resultater jeg fikk fra produkt forsiden min var: for SEO, alt jeg trenger er bare metatagger for å forbedre sidenes synlighet og relevans i nettet. Resten er ting jeg fikk bra på for eksempel Tittel, struktur, alt på bilder, og at jeg fikk en kommentar tilbake på at jeg hadde for mange interne lenker som dro til"#" men det er bare fordi nettsiden er fortsatt en prototype. For UU så fikk jeg kontrast igjen, og at nettstedet skal være fullt responsivt og tilgjengelig på alle enheter, sikre alle elementer med bare tastaturet og å sørge at alle bilder har en god alt forklaring. </p>
+                <p>Resultater jeg fikk fra produkt info forsiden min var: for SEO er å ha en bedre tittel for produkter du kjøper, metainformasjon også med meta description, alt attributter, også skrev den til meg å kanskje å bruke article element for individuelle produkter. Også til slutt intern linking som er at fleste av lenkene leder til "#" som er jo fordi det er fortsatt en prototype side. For UU så fikk jeg det samme på alle, kontrast, tastaturnavigasjon, også elementen for størrekser bør bli tilknyttet med label. </p>
+            </section>
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ChatGPT</th>
+                            <th>Lighthouse</th>
+                            <th>Webaim</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ingen meta description</td>
+                            <td>Ingen meta description</td>
+                            <td>X</td>
+                        </tr>
+                        <tr>
+... (57 lines left)
